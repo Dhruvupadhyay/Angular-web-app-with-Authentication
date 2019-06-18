@@ -6,8 +6,8 @@ import { Subject } from 'rxjs';
 @Injectable()
 export class RecipeService{
     recipechanged=new Subject<Recipe[]>();
-    private Recipes:Recipe[]=[new Recipe("A test recipe","it is very tatsy","https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg",[new Ingredient("chicken",10),new Ingredient("cheese",20)]),
-    new Recipe("A Another test recipe","it is very tatsy","https://cdn.pixabay.com/photo/2016/02/02/15/33/dishes-1175493_960_720.jpg",[new Ingredient("burger",20),new Ingredient("pepper",80)])];
+    private Recipes:Recipe[]=[new Recipe("A test recipe","it is very tatsy","https://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/1506120378/MR_0917170472.jpg?itok=aWyDp3CA",[new Ingredient("chicken",10),new Ingredient("cheese",20)]),
+    new Recipe("A Another test recipe","it is very tatsy","https://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/1506120378/MR_0917170472.jpg?itok=aWyDp3CA",[new Ingredient("burger",20),new Ingredient("pepper",80)])];
 
     constructor(private shoppinglistservice:ShoppingListService){
 
